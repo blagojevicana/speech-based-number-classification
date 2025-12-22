@@ -22,33 +22,45 @@ Traditional speech recognition systems are complex; this project explores a simp
 
 ## Approach
 
-1. Data Collection
+#### 1. Data Collection
 
 - Recordings of numbers (0–9) by different speakers
 
 - Stored as WAV/MP3 files with correct numeric labels
 
-2. Preprocessing
+![Speech sequence](figures/speech_sequence.png)
+
+#### 2. Preprocessing
 
 - Audio normalization and noise reduction
 
 - Resampling to a consistent sampling rate
 
-- Feature extraction 
+- Feature extraction
 
-3. Model Training
+![LPC coef for two](figures/lpc_coef_for_two.png)
+![Features](figures/features.png)
+
+#### 3. Model Training
 
 - Optimal Linear Classifier
 
-- Training on extracted features 
+- Training on extracted features
 
-4. Evaluation
+![Model](figures/model.png)
+
+#### 4. Evaluation
 
 - Metrics: Accuracy, Confusion Matrix
 
 - Analysis of misclassified digits
 
 - Visualizations of feature distributions
+
+
+![Confusion matrix](figures/confusion_matrix.png)
+
+
 
 ## Limitations
 
